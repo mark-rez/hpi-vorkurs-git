@@ -1,6 +1,6 @@
 def main() -> None:
     try:
-        with open("secret_data.txt", "w") as file:
+        with open("secret_data.txt", "r") as file:
             print("Login mit Daten:\n")
             while True:
                 ch = file.read(1)
@@ -13,4 +13,4 @@ def main() -> None:
     return 0
 
 if __name__ == "__main__":
-    print("Nichts passiert. :( Ich glaube, du musst noch einige Fehler beheben.")
+    main()
